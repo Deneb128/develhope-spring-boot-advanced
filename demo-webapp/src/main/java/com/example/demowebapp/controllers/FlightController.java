@@ -25,9 +25,4 @@ public class FlightController {
     public List<Flight> getFlightList(){
         return flightService.getFlightList();
     }
-
-    @GetMapping(path = "/get50")
-    public List get50Flights(){
-        return flightService.get50Flights();
-    }
 }

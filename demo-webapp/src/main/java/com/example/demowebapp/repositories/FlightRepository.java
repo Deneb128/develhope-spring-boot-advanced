@@ -11,8 +11,8 @@ import java.util.List;
 @Repository
 public interface FlightRepository extends JpaRepository<Flight, Long> {
 
-    @Query(value = "SELECT * FROM flights LIMIT 50",
+    @Query(value = "SELECT * FROM flights",
     nativeQuery = true)
-    List<Flight> get50Flights();
+    List<Flight> findAllCustom();
 
 }
