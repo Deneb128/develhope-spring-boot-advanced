@@ -15,9 +15,6 @@ import java.util.Random;
 @SpringBootApplication
 public class DemoWebappApplication {
 
-	@Autowired
-	FlightRepository flightRepository;
-
 	public static void main(String[] args) {
 		SpringApplication.run(DemoWebappApplication.class, args);
 	}
