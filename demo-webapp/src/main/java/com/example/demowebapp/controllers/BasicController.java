@@ -16,6 +16,6 @@ public class BasicController {
     private Environment environment;
     @GetMapping
     public String greeting(){
-        return "devName: " + environment.getProperty("devName") + "\nauthCode: " + environment.getProperty("authCode");
+        return environment.getProperty("welcomeMsg");
     }
 }

@@ -1,4 +1,21 @@
-authCode: xyz458
-devName: Robert
+---
+spring:
+  config:
+    activate:
+      on-profile: prod
+environment: prod
 server:
-  port: 4500
+  port: 5000
+
+welcomeMsg: Hello from Prod
+---
+spring:
+  config:
+    activate:
+      on-profile: test
+environment: test
+server:
+  port: 4000
+welcomeMsg: Hello from Test
+
+
