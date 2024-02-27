@@ -15,7 +15,7 @@ public class BasicController {
     @Autowired
     private Environment environment;
     @GetMapping
-    public String devName(){
-        return environment.getProperty("devName");
+    public String greeting(){
+        return "devName: " + environment.getProperty("devName") + "\nauthCode: " + environment.getProperty("authCode");
     }
 }

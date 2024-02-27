@@ -1,12 +1,4 @@
-environment: prod
-server:
-  port: 7070
+authCode: xyz458
 devName: Robert
----
-environment: test
 server:
-  port: 4000
-devName: Robert
----
-server:
-  port: 5000
+  port: 4500
