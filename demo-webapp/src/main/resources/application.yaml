@@ -1,21 +1,11 @@
----
 spring:
-  config:
-    activate:
-      on-profile: prod
-environment: prod
-server:
-  port: 5000
-
-welcomeMsg: Hello from Prod
----
-spring:
-  config:
-    activate:
-      on-profile: test
-environment: test
-server:
-  port: 4000
-welcomeMsg: Hello from Test
-
-
+  output:
+    ansi:
+      enabled: ALWAYS
+logging:
+  level:
+    root: INFO
+    com.example.demowebap.services.*: DEBUG
+  file.name: myCustomLogs/syslog
+customIntFirst: 2
+customIntSecond: 8
